@@ -1,0 +1,225 @@
+html,body, h1, h2, h3, p, a, li, dl, dt, dd {
+  margin: 0;
+  padding:0;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: normal;
+}
+
+
+/* ---------navigation-------- */
+.navigation-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.navigation-wrapper {
+  padding: 50px 50px;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.nav-items {
+  /* justify-content: center; */
+  padding: 60px 0px 50px;
+}
+.nav-items ul {
+  display: flex;
+
+}
+.nav-items ul li {
+  padding: 0 10px;
+
+}
+.logo {
+  padding: 50px 0 0 0;
+}
+
+
+/* ------------main visual---------- */
+.main-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+/* --------------introduction----------- */
+.about-text {
+  padding: 50px 5%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-text h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.about-text h1, p{
+  line-height: 1.5;
+
+}
+
+.name {
+  margin-bottom: 30px;
+}
+
+.history {
+  padding-bottom: 30px;
+}
+
+.profile {
+  line-height: 2;
+}
+
+
+/* ---------------works ---------------- */
+
+.works h1 {
+  text-align: center;
+  padding: 10%;
+}
+
+.works-container {
+  width: 80%;
+}
+
+.works-images {
+  min-height: 100%;
+
+}
+
+.works-row {
+  padding: 5% 0;
+}
+
+
+/* ---------------news-------------- */
+.news {
+  padding: 0 5%;
+}
+
+.news h1 {
+  text-align: center;
+  padding: 10%;
+
+}
+
+dt {
+  float: left;
+  line-height: 1.5;
+  padding: 1rem 0;
+
+}
+
+dd {
+  margin-left: 30%;
+  line-height: 1.5;
+  padding: 1rem 0;
+
+}
+
+.news-border {
+  border-bottom: solid 1px #293462;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.news-border-first {
+  border-top: solid 1px #293462;
+}
+
+/* -------------------contact -------------- */
+
+.contact {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-height {
+  height: 100vh;
+}
+.contact h1 {
+  text-align: center;
+  padding: 10%;
+  margin-top: 5%;
+}
+
+.input-text {
+  height: 400px;
+}
+
+.form-group {
+
+  padding: 1%;
+}
+
+.contact .btn {
+  margin: 15% auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+footer p{
+  background-color: #7F8487;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding: 3px;
+
+}
+
+
+/* ----------media query----------- */
+ @media (max-width: 577px) {
+
+  /* ---------nav bar--------- */
+  .navigation-wrapper {
+    justify-content: center;
+    /* padding: 30px; */
+
+  }
+
+  .nav-items {
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .logo {
+    padding: 10px 0;
+  }
+
+  /* -----------works------------ */
+  .works-row {
+    padding: 0;
+  }
+
+  .works-images {
+    padding-bottom: 5%;
+
+  }
+
+
+  /* --------news--------- */
+  dt {
+    float: none;
+    /* margin-left: 10%; */
+    padding-bottom: 0;
+
+  }
+  dd {
+    margin: 0 ;
+    padding-top: 0;
+  }
+
+  .form-group {
+    text-align: left;
+  }
+
+  /* -----------contact---------- */
+  .contact {
+    width: 80%;
+
+}
